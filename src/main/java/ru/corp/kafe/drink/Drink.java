@@ -1,4 +1,4 @@
-package drink;
+package ru.corp.kafe.drink;
 
 public class Drink {
     private int value;
@@ -11,8 +11,6 @@ public class Drink {
     public void setPrice(int price) {
         this.price = price;
     }
-
-
 
     public int getValue() {
         return value;

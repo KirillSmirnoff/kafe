@@ -1,18 +1,23 @@
 plugins {
     java
+    id("org.springframework.boot") version "2.5.1"
+    id("io.spring.dependency-management") version "1.0.11.RELEASE"
 }
 
 group = "ru.corp.kafe"
 version = "1.0-SNAPSHOT"
+
+java.sourceCompatibility = JavaVersion.VERSION_11
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    testCompile("junit", "junit", "4.12")
+    implementation("org.springframework.boot:spring-boot-starter-web")
+    testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
-configure<JavaPluginConvention> {
-    sourceCompatibility = JavaVersion.VERSION_1_8
+tasks.withType<Test> {
+    useJUnitPlatform()
 }

@@ -1,4 +1,4 @@
-package model;
+package ru.corp.kafe.model;
 
 import java.time.LocalDate;
 
