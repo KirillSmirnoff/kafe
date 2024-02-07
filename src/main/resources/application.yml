@@ -1,2 +1,7 @@
 server:
   port: 9091
+
+spring:
+  datasource:
+    driver-class-name: org.sqlite.JDBC
+    url: "jdbc:sqlite:kafe.db"

@@ -15,7 +15,12 @@ repositories {
 
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.springframework.boot:spring-boot-starter-data-jdbc")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
+
+    implementation ("org.xerial:sqlite-jdbc:3.42.0.0")
+    implementation ("org.komamitsu:spring-data-sqlite:1.0.0")
+
 }
 
 tasks.withType<Test> {
